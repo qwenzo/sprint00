@@ -1,69 +1,49 @@
 
-ELSHARK@ELSHARK-PC MINGW64 ~/Desktop/sprint0
+ELSHARK@ELSHARK-PC MINGW64 ~/Desktop/sprint-0
 $ git init
-Initialized empty Git repository in C:/Users/ELSHARK/Desktop/sprint0/.git/
+Initialized empty Git repository in C:/Users/ELSHARK/Desktop/sprint-0/.git/
 
-ELSHARK@ELSHARK-PC MINGW64 ~/Desktop/sprint0 (master)
-$ git add section 1.1 Getting Started
-fatal: pathspec 'section' did not match any files
-
-ELSHARK@ELSHARK-PC MINGW64 ~/Desktop/sprint0 (master)
+ELSHARK@ELSHARK-PC MINGW64 ~/Desktop/sprint-0 (master)
 $ git add section_1.1_Getting_Started
-warning: LF will be replaced by CRLF in section_1.1_Getting_Started/Getting-Star                        ted-About-Version-Control.htm.
+warning: LF will be replaced by CRLF in section_1.1_Getting_Started/Getting-Started-About-Version-Control.htm.
 The file will have its original line endings in your working directory.
 
-ELSHARK@ELSHARK-PC MINGW64 ~/Desktop/sprint0 (master)
-$ git add section_3.1_Git Branching
-fatal: pathspec 'section_3.1_Git' did not match any files
+ELSHARK@ELSHARK-PC MINGW64 ~/Desktop/sprint-0 (master)
+$ git section_3.1_Git_Branching
+git: 'section_3.1_Git_Branching' is not a git command. See 'git --help'.
 
-ELSHARK@ELSHARK-PC MINGW64 ~/Desktop/sprint0 (master)
+ELSHARK@ELSHARK-PC MINGW64 ~/Desktop/sprint-0 (master)
 $ git add section_3.1_Git_Branching
-warning: LF will be replaced by CRLF in section_3.1_Git_Branching/Git-Branching-Branches-in-a-Nutshell.htm.
-The file will have its original line endings in your working directory.
 
-ELSHARK@ELSHARK-PC MINGW64 ~/Desktop/sprint0 (master)
+ELSHARK@ELSHARK-PC MINGW64 ~/Desktop/sprint-0 (master)
 $ git add section_5.1_Distributed_Git
 warning: LF will be replaced by CRLF in section_5.1_Distributed_Git/Distributed-Git-Distributed-Workflows.htm.
 The file will have its original line endings in your working directory.
 
-ELSHARK@ELSHARK-PC MINGW64 ~/Desktop/sprint0 (master)
-$ git rm ^C
-
-ELSHARK@ELSHARK-PC MINGW64 ~/Desktop/sprint0 (master)
+ELSHARK@ELSHARK-PC MINGW64 ~/Desktop/sprint-0 (master)
 $ git rm section_3.1_Git_Branching
 fatal: not removing 'section_3.1_Git_Branching' recursively without -r
 
-ELSHARK@ELSHARK-PC MINGW64 ~/Desktop/sprint0 (master)
-$ git rm section_3.1_Git_Branching
-fatal: not removing 'section_3.1_Git_Branching' recursively without -r
-
-ELSHARK@ELSHARK-PC MINGW64 ~/Desktop/sprint0 (master)
-$ git rm -r section_3.1_Git_Branching
-error: the following file has changes staged in the index:
-    section_3.1_Git_Branching/Git-Branching-Branches-in-a-Nutshell.htm
-(use --cached to keep the file, or -f to force removal)
-
-ELSHARK@ELSHARK-PC MINGW64 ~/Desktop/sprint0 (master)
-$ git commit -m section_3.1_Git_Branching
-[master (root-commit) 8b8fb64] section_3.1_Git_Branching
+ELSHARK@ELSHARK-PC MINGW64 ~/Desktop/sprint-0 (master)
+$  git commit -m section_3.1_Git_Branching
+[master (root-commit) 6a76e63] section_3.1_Git_Branching
  3 files changed, 2518 insertions(+)
  create mode 100644 section_1.1_Getting_Started/Getting-Started-About-Version-Control.htm
  create mode 100644 section_3.1_Git_Branching/Git-Branching-Branches-in-a-Nutshell.htm
  create mode 100644 section_5.1_Distributed_Git/Distributed-Git-Distributed-Workflows.htm
 
-ELSHARK@ELSHARK-PC MINGW64 ~/Desktop/sprint0 (master)
-$ git rm -r section_3.1_Git_Branching
+ELSHARK@ELSHARK-PC MINGW64 ~/Desktop/sprint-0 (master)
+$  git rm -r section_3.1_Git_Branching
 rm 'section_3.1_Git_Branching/Git-Branching-Branches-in-a-Nutshell.htm'
 
-ELSHARK@ELSHARK-PC MINGW64 ~/Desktop/sprint0 (master)
-$ git rev-parse HEAD
-8b8fb64b33c54b6fb37cd0794c646863035f4cb6
+ELSHARK@ELSHARK-PC MINGW64 ~/Desktop/sprint-0 (master)
+$ ^C
 
-ELSHARK@ELSHARK-PC MINGW64 ~/Desktop/sprint0 (master)
-$ git reset --hard 8b8fb64b33c54b6fb37cd0794c646863035f4cb6
-HEAD is now at 8b8fb64 section_3.1_Git_Branching
+ELSHARK@ELSHARK-PC MINGW64 ~/Desktop/sprint-0 (master)
+$ git reset --hard 6a76e63
+HEAD is now at 6a76e63 section_3.1_Git_Branching
 
-ELSHARK@ELSHARK-PC MINGW64 ~/Desktop/sprint0 (master)
+ELSHARK@ELSHARK-PC MINGW64 ~/Desktop/sprint-0 (master)
 $ git push -f origin master
 fatal: 'origin' does not appear to be a git repository
 fatal: Could not read from remote repository.
@@ -71,167 +51,95 @@ fatal: Could not read from remote repository.
 Please make sure you have the correct access rights
 and the repository exists.
 
-ELSHARK@ELSHARK-PC MINGW64 ~/Desktop/sprint0 (master)
-$ git commit -m "after deleting"
+ELSHARK@ELSHARK-PC MINGW64 ~/Desktop/sprint-0 (master)
+$ git commit -m "BEFORE PUSHING COMMIT"
 On branch master
 Untracked files:
-        AllMyCommands.txt.txt
+        AllMyCommands.txt
 
 nothing added to commit but untracked files present
 
-ELSHARK@ELSHARK-PC MINGW64 ~/Desktop/sprint0 (master)
-$ git push origin master
-fatal: 'origin' does not appear to be a git repository
-fatal: Could not read from remote repository.
+ELSHARK@ELSHARK-PC MINGW64 ~/Desktop/sprint-0 (master)
+$ git remote add origin https://github.com/qwenzo/sprint00.git
 
-Please make sure you have the correct access rights
-and the repository exists.
+ELSHARK@ELSHARK-PC MINGW64 ~/Desktop/sprint-0 (master)
+$ git remote add origin https://github.com/qwenzo/sprint00.git
+fatal: remote origin already exists.
 
-ELSHARK@ELSHARK-PC MINGW64 ~/Desktop/sprint0 (master)
-$ git remote add origin https://github.com/qwenzo/sprint0
-
-ELSHARK@ELSHARK-PC MINGW64 ~/Desktop/sprint0 (master)
-$ git commit -m "after remote origin"
-On branch master
-Untracked files:
-        AllMyCommands.txt.txt
-
-nothing added to commit but untracked files present
-
-ELSHARK@ELSHARK-PC MINGW64 ~/Desktop/sprint0 (master)
+ELSHARK@ELSHARK-PC MINGW64 ~/Desktop/sprint-0 (master)
 $ git push origin master
 Counting objects: 8, done.
 Delta compression using up to 4 threads.
 Compressing objects: 100% (8/8), done.
-Writing objects: 100% (8/8), 14.34 KiB | 312.00 KiB/s, done.
+Writing objects: 100% (8/8), 14.34 KiB | 3.58 MiB/s, done.
 Total 8 (delta 2), reused 0 (delta 0)
 remote: Resolving deltas: 100% (2/2), done.
-To https://github.com/qwenzo/sprint0
+To https://github.com/qwenzo/sprint00.git
  * [new branch]      master -> master
 
-ELSHARK@ELSHARK-PC MINGW64 ~/Desktop/sprint0 (master)
-$ git commit -m "after pushing to master"
+ELSHARK@ELSHARK-PC MINGW64 ~/Desktop/sprint-0 (master)
+$ $ git commit -m "after remote origin"
+bash: $: command not found
+
+ELSHARK@ELSHARK-PC MINGW64 ~/Desktop/sprint-0 (master)
+$  git commit -m "after remote origin"
 On branch master
 Untracked files:
-        AllMyCommands.txt.txt
+        AllMyCommands.txt
 
 nothing added to commit but untracked files present
 
-ELSHARK@ELSHARK-PC MINGW64 ~/Desktop/sprint0 (master)
+ELSHARK@ELSHARK-PC MINGW64 ~/Desktop/sprint-0 (master)
 $ touch README.md
 
-ELSHARK@ELSHARK-PC MINGW64 ~/Desktop/sprint0 (master)
-$ git commit -m "adding readme"
+ELSHARK@ELSHARK-PC MINGW64 ~/Desktop/sprint-0 (master)
+$ git commit -m "after adding readme"
 On branch master
 Untracked files:
-        AllMyCommands.txt.txt
+        AllMyCommands.txt
         README.md
 
 nothing added to commit but untracked files present
 
-ELSHARK@ELSHARK-PC MINGW64 ~/Desktop/sprint0 (master)
-$ git add README.rnd
-fatal: pathspec 'README.rnd' did not match any files
+ELSHARK@ELSHARK-PC MINGW64 ~/Desktop/sprint-0 (master)
+$ git branch -d ReadMe
+error: branch 'ReadMe' not found.
 
-ELSHARK@ELSHARK-PC MINGW64 ~/Desktop/sprint0 (master)
-$ git add README.md
-
-ELSHARK@ELSHARK-PC MINGW64 ~/Desktop/sprint0 (master)
-$ git commit -m README.md
-[master 4bf039d] README.md
- 1 file changed, 5 insertions(+)
- create mode 100644 README.md
-
-ELSHARK@ELSHARK-PC MINGW64 ~/Desktop/sprint0 (master)
-$ git push origin master
-Counting objects: 3, done.
-Delta compression using up to 4 threads.
-Compressing objects: 100% (3/3), done.
-Writing objects: 100% (3/3), 414 bytes | 414.00 KiB/s, done.
-Total 3 (delta 1), reused 0 (delta 0)
-remote: Resolving deltas: 100% (1/1), completed with 1 local object.
-To https://github.com/qwenzo/sprint0
-   8b8fb64..4bf039d  master -> master
-
-ELSHARK@ELSHARK-PC MINGW64 ~/Desktop/sprint0 (master)
+ELSHARK@ELSHARK-PC MINGW64 ~/Desktop/sprint-0 (master)
 $ git checkout -b ReadMe
 Switched to a new branch 'ReadMe'
 
-ELSHARK@ELSHARK-PC MINGW64 ~/Desktop/sprint0 (ReadMe)
-$ git push origin ReadMe
-Total 0 (delta 0), reused 0 (delta 0)
-To https://github.com/qwenzo/sprint0
- * [new branch]      ReadMe -> ReadMe
-
-ELSHARK@ELSHARK-PC MINGW64 ~/Desktop/sprint0 (ReadMe)
-$ git add ReadMe
-fatal: pathspec 'ReadMe' did not match any files
-
-ELSHARK@ELSHARK-PC MINGW64 ~/Desktop/sprint0 (ReadMe)
+ELSHARK@ELSHARK-PC MINGW64 ~/Desktop/sprint-0 (ReadMe)
 $ git add README.md
 
-ELSHARK@ELSHARK-PC MINGW64 ~/Desktop/sprint0 (ReadMe)
-$ git commit -m "adding README.rnd to ReadMe Branch"
-On branch ReadMe
-Untracked files:
-        AllMyCommands.txt
+ELSHARK@ELSHARK-PC MINGW64 ~/Desktop/sprint-0 (ReadMe)
+$ git commit -m "after adding readme.rnd to readme branch"
+[ReadMe 2668647] after adding readme.rnd to readme branch
+ 1 file changed, 5 insertions(+)
+ create mode 100644 README.md
 
-nothing added to commit but untracked files present
+ELSHARK@ELSHARK-PC MINGW64 ~/Desktop/sprint-0 (ReadMe)
+$ git checkout -b master
+fatal: A branch named 'master' already exists.
 
-ELSHARK@ELSHARK-PC MINGW64 ~/Desktop/sprint0 (ReadMe)
-$ git merge master
-Already up to date.
-
-ELSHARK@ELSHARK-PC MINGW64 ~/Desktop/sprint0 (ReadMe)
+ELSHARK@ELSHARK-PC MINGW64 ~/Desktop/sprint-0 (ReadMe)
 $ git checkout master
 Switched to branch 'master'
 
-ELSHARK@ELSHARK-PC MINGW64 ~/Desktop/sprint0 (master)
+ELSHARK@ELSHARK-PC MINGW64 ~/Desktop/sprint-0 (master)
 $ git merge ReadMe
-Already up to date.
+Updating 6a76e63..2668647
+Fast-forward
+ README.md | 5 +++++
+ 1 file changed, 5 insertions(+)
+ create mode 100644 README.md
 
-ELSHARK@ELSHARK-PC MINGW64 ~/Desktop/sprint0 (master)
-$  git merge master
-Already up to date.
+ELSHARK@ELSHARK-PC MINGW64 ~/Desktop/sprint-0 (master)
+$ git add AllMyCommands.txt
 
-ELSHARK@ELSHARK-PC MINGW64 ~/Desktop/sprint0 (master)
-$ git branch -d ReadMe
-Deleted branch ReadMe (was 4bf039d).
-
-ELSHARK@ELSHARK-PC MINGW64 ~/Desktop/sprint0 (master)
-$ git branch ReadMe
-
-ELSHARK@ELSHARK-PC MINGW64 ~/Desktop/sprint0 (master)
-$ git checkout ReadMe
-Switched to branch 'ReadMe'
-
-ELSHARK@ELSHARK-PC MINGW64 ~/Desktop/sprint0 (ReadMe)
-$ git add README.md
-
-ELSHARK@ELSHARK-PC MINGW64 ~/Desktop/sprint0 (ReadMe)
-$ git commit -m "after adding Readme.rnd to readme"
-On branch ReadMe
-Untracked files:
-        AllMyCommands.txt
-
-nothing added to commit but untracked files present
-
-ELSHARK@ELSHARK-PC MINGW64 ~/Desktop/sprint0 (ReadMe)
-$ git checkout master
-Switched to branch 'master'
-
-ELSHARK@ELSHARK-PC MINGW64 ~/Desktop/sprint0 (master)
-$ git merge ReadMe
-Already up to date.
-
-ELSHARK@ELSHARK-PC MINGW64 ~/Desktop/sprint0 (master)
-$ git add .
-
-ELSHARK@ELSHARK-PC MINGW64 ~/Desktop/sprint0 (master)
-$ git commit -m "adding AllMyCommands.txt file"
-[master 52c05bf] adding AllMyCommands.txt file
- 1 file changed, 54 insertions(+)
+ELSHARK@ELSHARK-PC MINGW64 ~/Desktop/sprint-0 (master)
+$ git commit -m "after adding all my commands . txt "
+[master 2196323] after adding all my commands . txt
+ 1 file changed, 237 insertions(+)
  create mode 100644 AllMyCommands.txt
 
-ELSHARK@ELSHARK-PC MINGW64 ~/Desktop/sprint0 (master)
-$
